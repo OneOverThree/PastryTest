@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-15T16:02:49.151Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="ZgSF6iwStC1mOm1EHAQh" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-15T16:46:32.899Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="VPYoej6KT6illnXlLJdr" version="20.7.4" type="github">
   <diagram name="Page-1" id="6133507b-19e7-1e82-6fc7-422aa6c4b21f">
     <mxGraphModel dx="2390" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -65,7 +65,7 @@
           <mxGeometry y="138" width="260" height="26" as="geometry" />
         </mxCell>
         <mxCell id="22s6nns8kScePFMX1tpp-31" value="SocketPastryNodeFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="860" y="1203" width="370" height="190" as="geometry" />
+          <mxGeometry x="872.5" y="1203" width="370" height="190" as="geometry" />
         </mxCell>
         <mxCell id="22s6nns8kScePFMX1tpp-32" value="# nidFactory: NodeIdFactory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="22s6nns8kScePFMX1tpp-31">
           <mxGeometry y="26" width="370" height="26" as="geometry" />
@@ -260,6 +260,24 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="30.422535211267586" y="1161" as="sourcePoint" />
             <mxPoint x="209.95305164319234" y="922" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22s6nns8kScePFMX1tpp-103" value="NodeHandle" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-530" y="1255" width="260" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="22s6nns8kScePFMX1tpp-104" value="# localnode: PastryNode" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="22s6nns8kScePFMX1tpp-103">
+          <mxGeometry y="26" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="22s6nns8kScePFMX1tpp-105" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="22s6nns8kScePFMX1tpp-103">
+          <mxGeometry y="52" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="22s6nns8kScePFMX1tpp-106" value="+ getNodeId(): Id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2" vertex="1" parent="22s6nns8kScePFMX1tpp-103">
+          <mxGeometry y="60" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="22s6nns8kScePFMX1tpp-112" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="22s6nns8kScePFMX1tpp-80" target="22s6nns8kScePFMX1tpp-103">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-10" y="1230" as="sourcePoint" />
+            <mxPoint x="150" y="1230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

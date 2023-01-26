@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-26T16:15:02.431Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="IXCI1vSKIq-MD7QcZsDA" version="20.8.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-26T16:39:07.757Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="WRojeVWrIE0YljjnlDe9" version="20.8.11" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1290" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -119,6 +119,42 @@
             <mxPoint x="-120" y="390" as="sourcePoint" />
             <mxPoint x="40" y="390" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ANlF2vqmyMP78w_lvlv7-39" target="ANlF2vqmyMP78w_lvlv7-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-39" value="construct SplitStreamClient&amp;nbsp;" style="html=1;dashed=0;whitespace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="343.75" y="585" width="286.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ANlF2vqmyMP78w_lvlv7-40" target="ANlF2vqmyMP78w_lvlv7-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-40" value="set the first node in the SplitStream as parent node" style="html=1;dashed=0;whitespace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="343.75" y="640" width="287.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ANlF2vqmyMP78w_lvlv7-47" target="ANlF2vqmyMP78w_lvlv7-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-47" value="new child nodes and subscribe parent" style="html=1;dashed=0;whitespace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="343.75" y="700" width="287.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ANlF2vqmyMP78w_lvlv7-50" target="ANlF2vqmyMP78w_lvlv7-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-50" value="parent publish Id to the stripe" style="html=1;dashed=0;whitespace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="343.13" y="760" width="287.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ANlF2vqmyMP78w_lvlv7-53" target="ANlF2vqmyMP78w_lvlv7-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-53" value="children reply their Id" style="html=1;dashed=0;whitespace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="342.5" y="820" width="287.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ANlF2vqmyMP78w_lvlv7-55" target="ANlF2vqmyMP78w_lvlv7-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ANlF2vqmyMP78w_lvlv7-55" value="parent receive children Id and store" style="html=1;dashed=0;whitespace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="342.5" y="880" width="287.5" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

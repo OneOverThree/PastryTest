@@ -1,17 +1,24 @@
-<mxfile host="app.diagrams.net" modified="2023-05-02T17:25:24.781Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="X6W6fb-TPaz-PeTFzaVK" version="21.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-02T17:34:12.933Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="J9nQ1Ph4i-ZHV3FyMDn4" version="21.2.4" type="github">
   <diagram name="Page-1" id="PV-v512FcYgKe9rmVvOx">
-    <mxGraphModel dx="2345" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2670" dy="819" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="hgs2_hbNB6EHdo05LwJM-9" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="31Kd5paVXIL3qbrK54Rh-2" target="31Kd5paVXIL3qbrK54Rh-10">
+          <mxGeometry x="-0.4961" width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="1290" as="sourcePoint" />
+            <mxPoint x="320" y="993" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Application&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ forward(RouteMessage): boolean&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ deliver(Id, Message)&lt;span style=&quot;background-color: initial;&quot;&gt;: void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ update(NodeHandle, boolean)&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
-          <mxGeometry x="170" y="910" width="260" height="120" as="geometry" />
+          <mxGeometry x="-340" y="672" width="260" height="120" as="geometry" />
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ScribeClient&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ anycast(Topic, ScribeContent): boolean&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ deliver(Topic, ScribeContent)&lt;span style=&quot;background-color: initial;&quot;&gt;: void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ childAdded(Topic, NodeHandle): void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ childRemoved(Topic, NodeHandle): void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ subscribeFailed(Topic): void&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
-          <mxGeometry x="490" y="1280" width="260" height="150" as="geometry" />
+          <mxGeometry x="10" y="1290" width="260" height="150" as="geometry" />
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-3" value="NodeHandle" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="490" y="927" width="260" height="86" as="geometry" />
+          <mxGeometry x="10" y="689" width="260" height="86" as="geometry" />
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-4" value="# localnode: PastryNode" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="31Kd5paVXIL3qbrK54Rh-3" vertex="1">
           <mxGeometry y="26" width="260" height="26" as="geometry" />
@@ -23,22 +30,22 @@
           <mxGeometry y="60" width="260" height="26" as="geometry" />
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ScribeContent&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
-          <mxGeometry x="170" y="1305" width="260" height="100" as="geometry" />
+          <mxGeometry x="432.5" y="1315" width="260" height="100" as="geometry" />
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-8" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="31Kd5paVXIL3qbrK54Rh-2" target="31Kd5paVXIL3qbrK54Rh-3" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="105" y="1298" as="sourcePoint" />
-            <mxPoint x="40" y="1298" as="targetPoint" />
+            <mxPoint x="-205" y="1278" as="sourcePoint" />
+            <mxPoint x="-270" y="1278" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-9" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" source="31Kd5paVXIL3qbrK54Rh-2" target="31Kd5paVXIL3qbrK54Rh-7" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="630" y="1290" as="sourcePoint" />
-            <mxPoint x="630" y="1216" as="targetPoint" />
+            <mxPoint x="320" y="1270" as="sourcePoint" />
+            <mxPoint x="481.1111111111113" y="1160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-10" value="Topic" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="-180" y="1273" width="260" height="164" as="geometry" />
+          <mxGeometry x="432.5" y="650" width="260" height="164" as="geometry" />
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-11" value="# id: Id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="31Kd5paVXIL3qbrK54Rh-10" vertex="1">
           <mxGeometry y="26" width="260" height="26" as="geometry" />
@@ -59,7 +66,7 @@
           <mxGeometry y="138" width="260" height="26" as="geometry" />
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-24" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ route(Id, Message, NodeHandle): MessageReceipt&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;register()&lt;span style=&quot;background-color: initial;&quot;&gt;: void&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
-          <mxGeometry x="-200" y="916.5" width="300" height="107" as="geometry" />
+          <mxGeometry x="-720" y="672" width="300" height="107" as="geometry" />
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-26" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Scribe&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
           <mxGeometry x="1250" y="1305" width="260" height="100" as="geometry" />
@@ -84,16 +91,16 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgs2_hbNB6EHdo05LwJM-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ScribePolicy&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
-          <mxGeometry x="170" y="1110" width="260" height="100" as="geometry" />
+        <mxCell id="hgs2_hbNB6EHdo05LwJM-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ScribePolicy&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;allowSubscribe(Scribe, NodeHandle, List&amp;lt;Topic&amp;gt;, ScribeContent): List&amp;lt;Topic&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ directAnycast(AnycastMessage, NodeHandle, Collection&amp;lt;NodeHandle&amp;gt;): void&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ childAdded(Topic, NodeHandle): void&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;+ childRemoved(Topic, NodeHandle): void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;+ recvAnycastFail(Topic, NodeHandle, ScribeContent): void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;+ intermediateNode(ScribeMessage): void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;+ divideContent(List&amp;lt;Topic&amp;gt;, ScribeContent): ScribeContent&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="342.5" y="955" width="440" height="180" as="geometry" />
         </mxCell>
         <mxCell id="hgs2_hbNB6EHdo05LwJM-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ScribeMultiClient&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ subscribeSuccess(Collection&amp;lt;Topic&amp;gt;): void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
-          <mxGeometry x="490" y="1490" width="260" height="100" as="geometry" />
+          <mxGeometry x="10" y="1540" width="260" height="100" as="geometry" />
         </mxCell>
         <mxCell id="hgs2_hbNB6EHdo05LwJM-5" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="hgs2_hbNB6EHdo05LwJM-4" target="31Kd5paVXIL3qbrK54Rh-2">
           <mxGeometry x="-0.1765" width="160" relative="1" as="geometry">
-            <mxPoint x="810" y="1460" as="sourcePoint" />
-            <mxPoint x="730" y="1460" as="targetPoint" />
+            <mxPoint x="500" y="1440" as="sourcePoint" />
+            <mxPoint x="420" y="1440" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -112,6 +119,24 @@
             <mxPoint x="990" y="1300" as="sourcePoint" />
             <mxPoint x="990" y="1243" as="targetPoint" />
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgs2_hbNB6EHdo05LwJM-13" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="31Kd5paVXIL3qbrK54Rh-29" target="31Kd5paVXIL3qbrK54Rh-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="378" y="1290" as="sourcePoint" />
+            <mxPoint x="577" y="1032" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgs2_hbNB6EHdo05LwJM-14" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="hgs2_hbNB6EHdo05LwJM-3" target="31Kd5paVXIL3qbrK54Rh-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="830" y="1007" as="sourcePoint" />
+            <mxPoint x="770" y="989" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgs2_hbNB6EHdo05LwJM-15" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="hgs2_hbNB6EHdo05LwJM-3" target="31Kd5paVXIL3qbrK54Rh-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="245" y="1067" as="sourcePoint" />
+            <mxPoint x="510" y="988" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

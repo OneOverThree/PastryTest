@@ -1,9 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2023-05-02T17:54:16.724Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="G7quwUJHugIBR_AGj6lu" version="21.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-02T17:55:33.150Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="T1CKLByrHtuCJpb4FezA" version="21.2.4" type="github">
   <diagram name="Page-1" id="PV-v512FcYgKe9rmVvOx">
     <mxGraphModel dx="1843" dy="819" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="hgs2_hbNB6EHdo05LwJM-26" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="hgs2_hbNB6EHdo05LwJM-17" target="31Kd5paVXIL3qbrK54Rh-29">
+          <mxGeometry x="-0.1765" width="160" relative="1" as="geometry">
+            <mxPoint x="535" y="660" as="sourcePoint" />
+            <mxPoint x="510" y="613" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgs2_hbNB6EHdo05LwJM-25" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="31Kd5paVXIL3qbrK54Rh-2" target="31Kd5paVXIL3qbrK54Rh-10">
+          <mxGeometry x="-0.6901" y="4" width="160" relative="1" as="geometry">
+            <mxPoint x="1092" y="335" as="sourcePoint" />
+            <mxPoint x="1270" y="214" as="targetPoint" />
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="hgs2_hbNB6EHdo05LwJM-22" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="31Kd5paVXIL3qbrK54Rh-27" target="31Kd5paVXIL3qbrK54Rh-7">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="960" y="650" as="sourcePoint" />
@@ -50,7 +64,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-10" value="Topic" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="820" y="40" width="260" height="164" as="geometry" />
+          <mxGeometry x="1250" y="40" width="260" height="164" as="geometry" />
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-11" value="# id: Id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="31Kd5paVXIL3qbrK54Rh-10" vertex="1">
           <mxGeometry y="26" width="260" height="26" as="geometry" />
@@ -147,13 +161,6 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="960" y="650" as="sourcePoint" />
             <mxPoint x="472" y="155" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hgs2_hbNB6EHdo05LwJM-21" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="hgs2_hbNB6EHdo05LwJM-17" target="31Kd5paVXIL3qbrK54Rh-27">
-          <mxGeometry x="-0.7781" y="3" width="160" relative="1" as="geometry">
-            <mxPoint x="870" y="850" as="sourcePoint" />
-            <mxPoint x="560" y="563" as="targetPoint" />
-            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="31Kd5paVXIL3qbrK54Rh-27" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;JavaScribe&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ subscribe(Topic, ScribeClient, ScribeContent): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ publish(Topic, ScribeContent): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ anycast(Topic, ScribeContent): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">

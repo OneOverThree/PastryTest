@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-07T22:56:04.527Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="ZjOxh3ncnjm3q-vlc_-2" version="21.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-07T23:01:14.020Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="EDkpkhQ5xG8XtiuuilOT" version="21.6.1" type="github">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
     <mxGraphModel dx="1371" dy="613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -363,6 +363,45 @@
             <mxPoint x="731.5" y="1830" as="sourcePoint" />
             <mxPoint x="842.5" y="1790" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WjBOkaREf3bzk7RmlkT_-3" target="WjBOkaREf3bzk7RmlkT_-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-3" value="Update consumed offset" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="2480" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WjBOkaREf3bzk7RmlkT_-5" target="WjBOkaREf3bzk7RmlkT_-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-5" value="commit Offset (for Async)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="2540" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-6" value="Return RDD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="2600" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="WjBOkaREf3bzk7RmlkT_-7" target="WjBOkaREf3bzk7RmlkT_-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-7" value="DStream Initialization" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="2240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="WjBOkaREf3bzk7RmlkT_-8" target="WjBOkaREf3bzk7RmlkT_-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-8" value="Obtain consumed offset" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="2300" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="WjBOkaREf3bzk7RmlkT_-9" target="WjBOkaREf3bzk7RmlkT_-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-9" value="Construct OffsetRanges" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="2360" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="WjBOkaREf3bzk7RmlkT_-10" target="WjBOkaREf3bzk7RmlkT_-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WjBOkaREf3bzk7RmlkT_-10" value="Initialize RDD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="2420" width="180" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
